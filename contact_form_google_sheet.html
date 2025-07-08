@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #response {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <label>Name:</label>
+    <input type="text" name="name" required />
+    <label>Email:</label>
+    <input type="email" name="email" required />
+    <label>Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+    <p id="response"></p>
+  </form>
+
+  <script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxZkYjHio9sIsIxixarRTM8kaKnRS3DBcH4RL3Zr2XZtXqLTkMiE4KLQZluchh6Pb-u6g/exec"; // <-- your Google Script URL
+    const form = document.getElementById("contact-form");
+    const responseMsg = document.getElementById("response");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const formData = {
+        name: form.elements["name"].value,
+        email: form.elements["email"].value,
+        message: form.elements["message"].value,
+      };
+
+      responseMsg.textContent = "Sending...";
+      responseMsg.className = "";
+
+      fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData),
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.result === "success") {
+          responseMsg.textContent = "Message sent successfully!";
+          responseMsg.className = "success";
+          form.reset();
+        } else {
+          responseMsg.textContent = "Error: " + data.message;
+          responseMsg.className = "error";
+        }
+      })
+      .catch(error => {
+        responseMsg.textContent = "Network error. Check console.";
+        responseMsg.className = "error";
+        console.error("Fetch error:", error.message);
+      });
+    });
+  </script>
+</body>
+</html>
