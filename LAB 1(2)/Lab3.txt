@@ -1,0 +1,199 @@
+<html>
+<body style="font-family: monospace; color: white;background-image: url('https://t3.ftcdn.net/jpg/02/68/37/02/360_F_268370211_1HcOx7KV9J7grtWtMU6kyN0TBOScMlJE.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">>
+<h1 style="text-align: center;color: Gray; font-size:50px;">Periodic Table of elements</h1>
+<style>
+  td {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  td:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
+  }
+<table style="text-align: center">
+<tr style = "color: Gray">
+ <th style="padding:20px;"> </th>
+  <th style="padding:20px;">1 </th>
+  <th colspan="16"> </th>
+  <th style="padding:20px;">18 </th>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">1 </th>
+  <td style="padding:20px;" bgcolor="darkblue"> 1<br><b>H</b> <br> Hydrogen </td>
+  <th style="padding:20px;color: Gray">2 </th>
+  <th colspan="10"> </th>
+  <th style="padding:20px;color: Gray"> 13</th>
+  <th style="padding:20px;color: Gray">14 </th>
+  <th style="padding:20px;color: Gray"> 15</th>
+  <th style="padding:20px;color: Gray">16 </th>
+  <th style="padding:20px;color: Gray">17 </th>
+  <td style="padding:20px;" bgcolor="purple"> 2<br><b>He</b> <br>Helium </td>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">2 </th>
+  <td style="padding:20px;" bgcolor="red">3 <br><b>Li</b> <br>Lithium</td>
+  <td style="padding:20px;" bgcolor="orange"> 4<br><b>Be</b><br>Berylium</td>
+  <td colspan="10"> </td>
+  <td style="padding:20px;" bgcolor="blue"> 5<br><b>B</b><br> Boron</td>
+  <td style="padding:20px;" bgcolor="darkblue"> 6<br><b>C</b><br> Carbon</td>
+  <td style="padding:20px;" bgcolor="darkblue">7<br> <b>N</b><br> Nitrogen</td>
+  <td style="padding:20px;" bgcolor="darkblue">8<br> <b>O</b><br> Oxygen</td>
+  <td style="padding:20px;" bgcolor="magenta">9<br> <b>F</b><br> Flourine</td>
+  <td style="padding:20px;" bgcolor="purple">10<br> <b>Ne</b><br> Neon </td>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">3 </th>
+  <td style="padding:20px;" bgcolor="red">11<br> <b>Na</b> <br>Sodium</td>
+  <td style="padding:20px;" bgcolor="orange">12<br> <b>Mg</b> <br>Magnesium</td>
+  <th style="padding:20px;color: Gray">3 </th>
+  <th style="padding:20px;color: Gray"> 4</th>
+  <th style="padding:20px;color: Gray">5 </th>
+  <th style="padding:20px;color: Gray"> 6</th>
+  <th style="padding:20px;color: Gray">7 </th>
+  <th style="padding:20px;color: Gray"> 8</th>
+  <th style="padding:20px;color: Gray">9 </th>
+  <th style="padding:20px;color: Gray">10 </th>
+  <th style="padding:20px;color: Gray">11 </th>
+  <th style="padding:20px;color: Gray">12 </th>
+  <td style="padding:20px;" bgcolor="darkgreen">13<br> <b>Al</b><br> Aluminum</td>
+  <td style="padding:20px;" bgcolor="blue">14<br> <b>Si</b><br> Silicone</td>
+  <td style="padding:20px;" bgcolor="darkblue">15<br> <b>P</b> <br>Phosphorus</td>
+  <td style="padding:20px;" bgcolor="darkblue">16<br> <b>S</b> <br>Sulfur</td>
+  <td style="padding:20px;" bgcolor="magenta">17<br> <b>Cl</b> <br>Chlorine</td>
+  <td style="padding:20px;" bgcolor="purple"> 18<br><b>Ar</b><br> Argon</td>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">4 </th>
+  <td style="padding:20px;" bgcolor="red"> 19<br><b>K</b><br> Potassium</td>
+  <td style="padding:20px;" bgcolor="orange">20<br> <b>Ca</b> <br>Calcium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">21<br> <b>Sc</b><br> Scandium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">22<br> <b>Ti</b><br> Titanium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">23<br> <b>V</b><br> Vandium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">24<br> <b>Cr</b><br> Chromium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow"> 25<br><b>Mn</b><br> Manganese</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow"> 26<br><b>Fe</b><br> Iron</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">27<br> <b>Co</b><br> Cobalt</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">28<br> <b>Ni</b><br> Nickle</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">29<br> <b>Cu</b><br> Cupper</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">30<br> <b>Zn</b><br> Zinc</td>
+  <td style="padding:20px;" bgcolor="darkgreen">31<br> <b>Ga</b><br> Galium</td>
+  <td style="padding:20px;" bgcolor="blue">32<br> <b>Ge</b> <br>Germanium</td>
+  <td style="padding:20px;" bgcolor="blue">33<br> <b>As</b> <br>Arsenic</td>
+  <td style="padding:20px;" bgcolor="darkblue"> 34<br><b>Se</b><br> Selenium</td>
+  <td style="padding:20px;" bgcolor="magenta">35<br> <b>Br</b> <br>Bromine </td>
+  <td style="padding:20px;" bgcolor="purple">36<br> <b>Kr</b><br> Krypton</td>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">5 </th>
+  <td style="padding:20px;" bgcolor="red">37<br> <b>Rb</b><br> Rubidium</td>
+  <td style="padding:20px;" bgcolor="orange">38 <br><b>Sr</b><br> Strontium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">39<br><b>Y</b> <br>Yttrium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">40 <br><b>Zr</b><br> Zirconium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">41<br> <b>Nb</b> <br>Niobium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">42<br> <b>Mo</b> <br>Molybdenum</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">43<br> <b>Tc</b> <br>Technetium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">44<br> <b>Ru</b> <br>Ruthenium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">45 <br><b>Rh</b> <br>Rhodium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">46<br> <b>Pd</b> <br>Palladium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">47<br> <b>Ag</b> <br>Silver</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">48<br> <b>Cd</b> <br>Cadnium</td>
+  <td style="padding:20px;" bgcolor="darkgreen">49<br> <b>In</b> <br>Indium</td>
+  <td style="padding:20px;" bgcolor="darkgreen">50<br> <b>Sn</b> <br>Tin</td>
+  <td style="padding:20px;" bgcolor="blue">51<br> <b>Sb</b> <br>Antimony</td>
+  <td style="padding:20px;" bgcolor="blue"> 52<br><b>Te</b><br> Tellurium</td>
+  <td style="padding:20px;" bgcolor="magenta">53<br><b>I</b> <br>Iodine</td>
+  <td style="padding:20px;" bgcolor="purple">54<br> <b>Xe</b><br> Xenon</td>
+</tr>
+
+<tr>
+  <th style="padding:20px;color: Gray">6 </th>
+  <td style="padding:20px;" bgcolor="red"> 55<br><b>Cs</b><br> Cesium</td>
+  <td style="padding:20px;" bgcolor="orange"> 56<br><b>Ba</b> <br>Barium</td>
+  <th style="padding:20px;" bgcolor="lightgreen"> <b>La</b> </th>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">72 <br><b>Hf</b> <br>Hafnium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">73 <br><b>Ta</b> <br>Tantalum</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow"> 74<br><b>W</b> <br>Tungsten</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">75<br> <b>Re</b> <br>Rhenium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">76<br><b>Os</b><br> Osmium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">77<br> <b>Ir</b><br> Iridium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">78<br><b>Pt</b><br> Platinum</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">79<br> <b>Au</b><br> Gold</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">80<br><b>Hg</b> <br>Mercury</td>
+  <td style="padding:20px;" bgcolor="darkgreen">81<br> <b>Tl</b> <br>Thalium</td>
+  <td style="padding:20px;" bgcolor="darkgreen"> 82<br><b>Pb</b><br> Lead</td>
+  <td style="padding:20px;" bgcolor="darkgreen"> 83<br><b>Bi</b><br> Bismuth</td>
+  <td style="padding:20px;" bgcolor="blue">84<br> <b>Po</b> <br>Polonium</td>
+  <td style="padding:20px;" bgcolor="magenta">85<br> <b>At</b><br> Astatine</td>
+  <td style="padding:20px;" bgcolor="purple">86<br> <b>Rn</b><br> Radon</td>
+</tr>
+<tr>
+  <th style="padding:20px;color: Gray">7 </th>
+  <td style="padding:20px;" bgcolor="red">87<br> <b>Fr</b><br>Francium</td>
+  <td style="padding:20px;" bgcolor="orange">88<br> <b>Ra</b><br> Radium</td>
+  <th style="padding:20px;" bgcolor="green"> <br><b>Ac</b> </th>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">104<br><b>Rf</b><br> Rutherfordium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">105<br> <b>Db</b> <br>Dubnium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">106<br> <b>Sg</b><br> Seaborgium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">107<br> <b>Bh</b><br> Bohrium</td>
+  <td style="padding:20px;font-family: monospace; color: gray;" bgcolor="yellow">108<br> <b>Hs</b><br> Hassium</td>
+  <td style="padding:20px;font-family: monospace;"  bgcolor="gray">109<br> <b>Mt</b><br> Meitenrium</td>
+  <td style="padding:20px;font-family: monospace;"  bgcolor="gray">110<br> <b>Ds</b><br> Darmstadium</td>
+  <td style="padding:20px;font-family: monospace;"  bgcolor="gray">111<br> <b>Rg</b><br> Roentgenium</td>
+  <td style="padding:20px;font-family: monospace; color: black;" bgcolor="yellow">112 <br><b>Cn</b><br> Copernicium</td>
+  <td style="padding:20px;font-family: monospace;" bgcolor="gray"> 113<br><b>Nh</b> <br>Nihonium</td>
+  <td style="padding:20px;" bgcolor="gray">114 <br><b>Fl</b><br> Flerovium</td>
+  <td style="padding:20px;"  bgcolor="gray">115<br> <b>Mc</b><br> Moscovium</td>
+  <td style="padding:20px;" bgcolor="gray">116<br> <b>Lv</b> <br>Livermorium</td>
+  <td style="padding:20px;" bgcolor="gray">117 <br><b>Ts</b> <br>Tennessine</td>
+  <td style="padding:20px;"  bgcolor="gray">118<br> <b>Og</b> <br>Oganesson</td>
+</tr>
+
+<tr>
+  <th style="padding:20px;"> </th>
+  <th colspan="18"> </th>
+  <th style="padding:20px;"> </th>
+</tr>
+<tr>
+  <th colspan="3"> </th>
+  <td style="padding:20px;" bgcolor="lightgreen">57<br> <b>La</b> <br>lanthanum</td>
+  <td style="padding:20px;" bgcolor="lightgreen">58<br> <b>Ce</b> <br>Cerium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">59<br> <b>Pr</b> <br>Praseodymium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">60<br> <b>Nd</b><br> Neodymium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">61<br> <b>Pm</b><br> Promethium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">62<br> <b>Sm</b> <br>Samarium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">63<br> <b>Eu</b> <br>Europium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">64<br> <b>Gd</b><br> Gadolinium</td>
+  <td style="padding:20px;" bgcolor="lightgreen"> 65<br><b>Tb</b><br> Terbium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">66<br> <b>Dy</b> <br>Dysprosium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">67<br> <b>Ho</b><br> Holmium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">68<br> <b>Er</b><br> Erbium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">69<br> <b>Tm</b> <br>Thulium</td>
+  <td style="padding:20px;" bgcolor="lightgreen">70 <br><b>Yb</b> <br>Ytterbium</td>
+  <td style="padding:20px;" bgcolor="lightgreen"> 71<br><b>Lu</b> <br>Lutetium</td>
+  <td style="padding:20px;"> </td>
+</tr>
+<tr>
+  <th colspan="3"> </th>
+  <td style="padding:20px;" bgcolor="green">89<br> <b>Ac</b> <br>Actinium</td>
+  <td style="padding:20px;" bgcolor="green">90<br> <b>Th</b><br> Thorium</td>
+  <td style="padding:20px;" bgcolor="green">91<br> <b>Pa</b><br> Protactinium</td>
+  <td style="padding:20px;" bgcolor="green">92<br> <b>U</b> <br>Uranium</td>
+  <td style="padding:20px;" bgcolor="green">93 <br><b>Np</b> <br>Neptunium</td>
+  <td style="padding:20px;" bgcolor="green">94<br> <b>Pu</b><br> Plutonium</td>
+  <td style="padding:20px;" bgcolor="green">95<br> <b>Am</b> <br>Amaricium</td>
+  <td style="padding:20px;" bgcolor="green">96<br> <b>Cm</b><br> Curium</td>
+  <td style="padding:20px;" bgcolor="green">97<br> <b>Bk</b><br> Berkelium</td>
+  <td style="padding:20px;" bgcolor="green">98 <br><b>Cf</b><br> Californium</td>
+  <td style="padding:20px;" bgcolor="green"> 99<br><b>Es</b><br> Einsteinium</td>
+  <td style="padding:20px;" bgcolor="green">100<br> <b>Fm</b><br> Fermium</td>
+  <td style="padding:20px;" bgcolor="green">101<br> <b>Md</b><br> Mendelevium</td>
+  <td style="padding:20px;" bgcolor="green">102<br> <b>No</b><br> Nobelium</td>
+  <td style="padding:20px;" bgcolor="green">103<br> <b>Lr</b> <br>Lawrencium</td>
+  <td style="padding:20px;"> </td>
+</tr>
+</style>
+</table>
+</body>
+</html>

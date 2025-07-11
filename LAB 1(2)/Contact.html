@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>MY WEBSITE</h1>
+    <div class="navigation">
+        <div class="navspace"></div>
+        <button class="nav-button" onclick="location.href='index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='abtme.html'">About</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+    </div>
+    <div class="mode-toggle">
+        <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    </div>
+</header>
+
+<main>
+    <section class="contact-section">
+        <div class="form-container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                Full name:<br>
+                <input type="text" name="name" placeholder="Jon T. Manyakis"><br><br>
+
+                Email Address:<br>
+                <input type="email" name="email" placeholder="xxx@fit.edu.ph"><br><br>
+
+                Message:<br>
+                <textarea name="message" placeholder="Type your message..."></textarea><br><br>
+
+                <button type="submit" class="submit-button">Submit</button>
+                <p id="response"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p>Message Sent!</p>
+    <button onclick="closePopup()">Again?</button>
+    <button class="nav-button" onclick="location.href='index.html'">Home</button>
+  </div>
+</div>
+<div id="errorPopup" class="popup">
+  <div class="popup-content">
+    <p>Please fill out all fields before submitting.</p>
+    <button onclick="closeErrorPopup()">Close</button>
+  </div>
+</div>
+
+<footer>
+    <h2>CONTACT</h2>
+    <p>No.: 09066146149<br>Email: 202411250</p>
+</footer>
+
+
+<script>
+function toggleMode() {
+  document.body.classList.toggle("light-mode");
+}
+
+function showPopup() {
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+function showErrorPopup() {
+  document.getElementById('errorPopup').style.display = 'flex';
+}
+
+function closeErrorPopup() {
+  document.getElementById('errorPopup').style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('popup').style.display = 'none';
+  document.getElementById('errorPopup').style.display = 'none';
+
+  const scriptURL = "https://script.google.com/macros/s/AKfycbywOcMYpKsrYFlX9b9Zu-LBGS-4E4yjHm8oHNemR-FYNHiF0Xl0E9ROQ7ZjBw9EPEnorQ/exec";
+  const form = document.getElementById("contactForm");
+  const responseMsg = document.getElementById("response");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.textContent = "Submitting...";
+        submitButton.style.backgroundColor = "#aaa"; 
+        submitButton.style.color = "#444";
+
+      const inputs = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
+      let allFilled = true;
+
+      inputs.forEach(input => {
+        if (input.value.trim() === "") {
+          allFilled = false;
+        }
+      });
+
+      if (!allFilled) {
+        showErrorPopup();
+        return;
+      }
+
+      const formData = new FormData(form);
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: new URLSearchParams(formData)
+      })
+      .then(res => res.json())
+      .then(data => {
+        showPopup();
+        form.reset();
+        responseMsg.textContent = "Message sent successfully!";
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit";
+        submitButton.style.backgroundColor = ""; // restore original (or use original hex code)
+        submitButton.style.color = "";
+      })
+      .catch(error => {
+        responseMsg.textContent = "Error sending message.";
+        console.error("Error!", error.message);
+        submitButton.disabled = false;
+submitButton.textContent = "Submit";
+submitButton.style.backgroundColor = "";
+submitButton.style.color = "";
+      });
+    });
+  }
+});
+</script>
+
+
+
+</body>
+</html>

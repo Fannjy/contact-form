@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home Page</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<img id="splash-screen" src="title.png" alt="title">
+<header>
+    <h1>MY WEBSITE</h1>
+    <div class="navigation">
+        <div class="navspace"></div>
+        <button class="nav-button" onclick="location.href='index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='abtme.html'">About</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+    </div>
+    <div class="mode-toggle">
+        <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    </div>
+</header>
+
+<div class="title">
+
+
+<div class="glitch-container">
+ <img src="title.png" class="glitch-image" alt="Glitch Image">
+</div>
+
+
+</div>
+<div class="abt">
+<h1>ABOUT ME</h1><br> </div>
+<div class="acontainer">
+    <div class="sleft-column">
+        <img src="grad.jfif" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+    </div>
+    <div class="smiddle">
+        <p>Hi! I'm Ifan Join T. Maniquiz, and welcome to my portfolio.
+            I'm passionate about coding, drawing, and reading—a mix that fuels both my creativity and curiosity. Currently, I'm studying at FEU Tech, where I'm honing my skills and exploring new ideas every day. This portfolio showcases my journey, projects, and the things I love to create. Thanks for stopping by!</p>
+    
+    </div> 
+    </div>
+    <div class="abt">
+        <h1>PROJECTS</h1><br> </div>
+<div class="container">
+   <div class="left-column">
+      <a href="Lab2.html"> <h2>LAB 2</h2>
+       <p>...</p></a>
+   </div>
+   <div class="right-column">
+<a href="Lab3.html"> <h2>LAB 3</h2>
+       <p>...</p> </a>
+   </div>
+</div>
+<div class="container">
+    <div class="bleft-column">
+        <a href="LAB 4.html"><h2>LAB 4</h2>
+        <p>...</p></a>
+    </div>
+
+    <div class="bright-column">
+        <a href="SDG3.html"> <h2>LAB 5</h2>
+        <p>...</p></a>
+    </div>
+ </div>
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light-mode");
+	window.addEventListener("load", function () {
+        const splash = document.getElementById("splash-screen");
+        setTimeout(() => {
+            splash.style.display = "none";
+        }, 1000);
+    });
+}
+</script>
+<footer>
+   <p><h1>CONTACT</h1></p><p> No.: 09066146149 <br> Email: 202411250</p>
+</footer>
+
+
+</body>
+</html>

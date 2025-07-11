@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<div class="spacing">
+
+</div>
+    <h1>MY WEBSITE</h1>
+    <div class="navigation">
+        <div class="navspace"></div>
+        <button class="nav-button" onclick="location.href='index.html'">Home</button>
+        <button class="nav-button" onclick="location.href='abtme.html'">About</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+    </div>
+    <div class="mode-toggle">
+        <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    </div>
+</header>
+<div class="title">
+
+<div class="glitch-container">
+ <img src="title.png" class="glitch-image" alt="Glitch Image">
+</div>
+
+</div>
+
+<body>
+
+<div class="bg">
+<div class="containera">
+   <div class="left-columna">
+ <img src="grad.jfif" style="width: 220px; size:auto">
+ <br> <br><br><br>
+
+<ul class="text">
+ <li>Age: 19</li><br>
+ <li>Philippines</li><br>
+ <li>Imus, Cavite</li><br><br><br><br><br><br>
+ <li>09066146149</li><br>
+ <li>202411250@fit.edu.ph</li>
+</ul>
+
+  </div>
+    <div class="right-columna">
+      <div class="head">
+      <h1>Maniqui, Ifan Jon T.</h1> 
+      </div>
+      <div class="bot"> 
+      <br>
+      Program: BSITCST<br><br>
+      Year: 1st Year<br><br>
+      School:<br>FEU Institute of Technology
+      </div>
+      <div class="about">
+<div class="container2">
+<div class="abtt"><h1>About Me</h1></div>
+<div class="space"></div> 
+
+</div>
+<div class="container3">I am Ifan Jon T. Maniquiz from Cavite, with a passion for programming and technology. I have experience in C++, Python, and web development using HTML and CSS. My interest in robotics began in junior high school at General Emilio Aguinaldo National High School, where I participated in robotics programs during Grades 7 and 8.
+<br><br>
+In Grade 10, I collaborated with my peers Sean David Herrero and Anthony Dorado to create SprayBot, a functional robot project. Although I did not focus on programming in that project, I later contributed to the development of AWLMEWS (Automated Water Level Monitoring and Early Warning System) during Grade 12. This system utilized Arduino and IoT technology for flood monitoring and alerts.
+<br><br>
+Currently, I am continuing my studies at FEU Institute of Technology, further developing my skills and knowledge in programming and technology.
+</div>
+</div>
+
+      </div>
+</div>
+<div class="container4">
+  <div class="leftc"><img src="awlmews.jfif" style="width: 220px; size: auto"> </div>
+    <div class="middlec">
+        
+            <video width="360" height="260" controls style="object-fit: cover;">
+     <source src="video.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+     </video>
+    
+          </div>
+      <div class="rightc"><img src="spraybot.jfif" style="width: 220px; size: auto">  </div>
+</div>
+</div>
+</body>
+<section class="contact-section">
+<div class="form-container">
+This portfolio showcases my journey in learning Web Design with Client-Side Scripting. Throughout this experience, I explored the foundations of creating interactive 
+and visually appealing websites using HTML, CSS, and JavaScript. Each section reflects the skills I’ve developed, from building responsive layouts to implementing dynamic 
+features like light and dark modes, pop-ups, and smooth transitions. This project represents not only my growth in technical skills but also my creativity and dedication 
+to crafting user-friendly designs.
+</div> 
+</section>
+<footer>
+    <h2>CONTACT</h2>
+    <p>No.: 09066146149<br>Email: 202411250</p>
+</footer>
+
+<script>
+let modeIndex = 0;
+const modes = ["dark", "light", "custom"];
+
+function toggleMode() {
+    modeIndex++;
+    if (modeIndex >= modes.length) {
+        modeIndex = 0;
+    }
+    document.body.classList.remove("light-mode", "custom-mode");
+    if (modes[modeIndex] === "light") {
+        document.body.classList.add("light-mode");
+    } else if (modes[modeIndex] === "custom") {
+        document.body.classList.add("custom-mode");
+    }
+}
+</script>
+
+</body>
+</html>

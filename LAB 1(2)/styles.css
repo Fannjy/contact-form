@@ -1,0 +1,575 @@
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url('bg.jpg');
+     background-attachment: fixed;
+      background-position: center;
+      
+}
+
+
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    background-color: #333; 
+    z-index: 9999;
+    animation: fadeOut 2s forwards;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+header {
+    background-color: #333;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navigation {
+    display: flex;
+    max-width: 960px;
+    margin: 20px auto;
+    padding-left: 800px; /* If this is in your index.css, keep it. Adjust if needed */
+    align-items: center;
+}
+
+.navspace {
+    width: 80%;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.mode-toggle button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+.mode-toggle button:hover {
+    background-color: #777;
+}
+.homebutton,
+.portfoliobutton {
+    width: 10%;
+    color: #e0e0e0;
+    background-color: #333;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+glitch-container {
+ position: relative;
+ display: inline-block;
+}
+
+.glitch-image {
+ position: relative;
+ width: 80%;
+ animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+ 0% {
+ clip: rect(0, 300px, 50px, 0);
+ transform: translate(-5px, -5px);
+ }
+ 10% {
+ clip: rect(10px, 300px, 60px, 0);
+ transform: translate(5px, 5px);
+ }
+ 20% {
+ clip: rect(20px, 300px, 70px, 0);
+ transform: translate(-5px, 5px);
+ }
+ 30% {
+ clip: rect(30px, 300px, 80px, 0);
+ transform: translate(5px, -5px);
+ }
+ 100% {
+ clip: rect(0, 300px, 300px, 0);
+ transform: translate(0, 0);
+ }
+}
+
+ footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent; 
+}
+
+.title img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+  
+.portfoliobutton {
+    opacity: 0.5;
+}
+.abt {
+  display: flex;
+  max-width: 960px;
+  margin: 10px auto;
+  color:#e0e0e0;
+  margin-bottom: 70px auto;
+}
+.acontainer {
+   display: flex;
+   max-width: 960px;
+   margin: 20px auto;
+
+   color:#a7a7a7;
+   padding-right: 70px;
+   padding-left: 70px;
+   margin-bottom: 100px;
+}
+.smiddle {
+  background-color: #333;
+  color: #a7a7a7;
+  margin-left: 50px;
+  font-size: 20px;
+  padding: 50px;
+
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: #474747;
+  color:#e0e0e0;
+}
+
+.left-column {
+   width: 50%;
+   padding: 20px;
+   margin: 20px;
+   background-image: url('lab2.PNG');
+     background-position: center;
+     background-size: 500px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   background-color: #e0e0e0;
+}
+
+
+
+.right-column {
+   width: 50%;
+   padding: 20px;
+   margin: 20px;
+   background-image: url('lab3.PNG');
+      background-position: center;
+      background-size: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.bleft-column {
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+  background-image: url('lab4.PNG');
+     background-position: center;
+     background-size: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #e0e0e0;
+}
+
+
+
+.bright-column {
+  width: 50%;
+  padding: 20px;
+  margin: 20px;
+  background-image: url('lab5.PNG');
+     background-position: center;
+     background-size: 500px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.homebutton:active,
+.portfoliobutton:active {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    background-color: #888;
+}
+
+.left-column:hover,
+.middle:hover,
+.right-column:hover,
+.bleft-column:hover,
+.bmiddle:hover,
+.bright-column:hover {
+    transform: scale(1.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+   
+}
+
+/* This is the start of about me*/
+       body {
+          font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+       .bg {    
+         max-width: 960px;
+        margin: 20px auto;
+        background-image: url("bg.png");
+       }
+       .containera {
+           display: flex;
+           max-width: 960px;
+           margin: 20px auto;
+
+       }
+       .left-columna {
+          margin-right:20px auto ;
+           width: 30%;
+           padding: 20px;
+
+       }
+       .right-columna {
+           width: 70%;
+           padding-left: 10px;
+           padding-bottom: 20px;
+          
+       }
+       .head {
+         background-color:Gray;
+         padding: 2px;
+        margin-left: 200px;
+        font-size: 20px;
+        text-align: center;
+        color: White;
+       
+       }
+       .bot {
+         padding-left: 140px;
+         padding-top: 30px;
+         padding-bottom: 50px;
+         font-size: 20px;
+         background-color: #e0e0e0;
+       }
+        .container2 {
+          display: flex;
+          max-width: 960px;
+          margin-top: 30px;
+       }
+       .space {
+         width: 70%;
+         margin-right:20px auto ;
+       }
+        .abtt {
+         width: 30%;
+         background-color: gray;
+         text-align: center;
+
+         font-size: 20px;
+         color:  White;
+       }
+        .container3 {
+          background-color: #e0e0e0;
+          padding:30px;
+       }
+        .about {
+           max-width: 960px;
+           margin: 20px auto;
+       }
+        .container4 {
+           display: flex;
+           max-width: 960px;
+           margin: 20px auto;
+          background-color: #fff;
+        margin-top: 60px;
+       }
+       .leftc {
+          margin-right:20px auto ;
+           width: 30%;
+           padding: 20px;
+           padding-top: 40px ;
+           padding-bottom:40px ;
+          background-color: #e0e0e0;
+       }
+       .rightc {
+           width: 30%;
+           padding: 20px;
+           padding-top: 40px ;
+           padding-bottom:40px ;
+          background-color: #e0e0e0;
+       }
+       .middlec {
+           width: 50%;
+           padding: 20px;
+           padding-top: 40px ;
+           padding-bottom:40px ;
+          background-color: #f9f9f9;
+       }
+       .text {
+        color: #f9f9f9;
+       }
+
+
+
+/* THIS IS THE START OF CONTACT PAGE */
+  /* Popup */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #333;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #777;
+}
+
+.contact-section {
+    margin-top: calc(var(--header-height) + 30px);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+	margin-top: 300px;
+	margin-bottom: 100px;
+}
+
+.form-container {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+body.light-mode .form-container {
+    background-color: #fff;
+    color: black;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+textarea[name="message"] {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    background-color: #f0f0f0;
+}
+
+.submit-button {
+    background-color: #474747;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #5c5c5c;
+}
+
+
+/* THIS IS FOR THE DARKMODE */
+.mode-toggle button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+.mode-toggle button:hover {
+    background-color: #777;
+}
+
+/* Dark Mode Styles */
+
+body.light-mode header,
+body.light-mode footer,
+body.light-mode .smiddle,
+body.light-mode .sleft-column,
+body.light-mode .container{
+    background-color: #f0f0f0;
+    color: black;
+    background-image: none;
+}
+
+body.light-mode .homebutton,
+body.light-mode .portfoliobutton {
+    background-color: #333; /* Keep buttons dark even in light mode (optional) */
+    color: white;
+}
+
+body.light-mode header,
+body.light-mode footer,
+body.light-mode .smiddle,
+body.light-mode .container {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+body.light-mode .homebutton,
+body.light-mode .portfoliobutton {
+    background-color: #ccc;
+    color: black;
+}
+
+body.light-mode .left-column,
+body.light-mode .right-column,
+body.light-mode .bleft-column,
+body.light-mode .bright-column {
+    background-color: #e0e0e0;
+    color: black;
+}
+body.light-mode {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+
+body.light-mode .nav-button,
+body.light-mode .mode-toggle {
+    background-color: #ddd;
+    color: black;
+}
+
+body.light-mode .nav-button:hover,
+body.light-mode .mode-toggle:hover {
+    background-color: #bbb;
+}
+
+
+body.light-mode .form-container {
+    background-color: #fff;
+    color: black;
+}
+
+
+body.light-mode input,
+body.light-mode textarea {
+    background-color: #fff;
+    color: black;
+}
+
+
+a {
+    color: white;
+ }
